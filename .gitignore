@@ -71,6 +71,8 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+manifest.json.bkp
+cardbkp.json
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -102,3 +104,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Video media files
+*.mp4

@@ -1,0 +1,81 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "4e500d53-05f0-49e5-ae37-f3ef50747f90",
+    "packageName": "com.microsoft.teams.videoplayerbot",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://localhost:3000",
+        "privacyUrl": "https://localhost:3000/privacy",
+        "termsOfUseUrl": "https://localhost:3000/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Video Player Bot",
+        "full": "Video Player Bot"
+    },
+    "description": {
+        "short": "This bot sends and Adaptive Cards that plays a video in a Stage View.",
+        "full": "This bot sends and Adaptive Cards that plays a video in a Stage View."
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+          "contentUrl": "https://<<YOUR-SPO-DOMAIN>>.sharepoint.com/_layouts/15/TeamsLogon.aspx?spfx=true&dest=/",
+          "entityId": "sharePoint-49e5-f3ef50747f90",
+          "name": "SharePoint",
+          "scopes": [
+            "personal"
+          ],
+          "websiteUrl": "https:/<<YOUR-SPO-DOMAIN>>.sharepoint.com/"
+        }
+    ],    
+    "bots": [
+        {
+            "botId": "<<YOUR-MICROSOFT-APP-ID>>",
+            "scopes": [
+                "personal"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hello",
+                            "description": "Say hello to select an option"
+                        },
+                        {
+                            "title": "AppID",
+                            "description": "Get Teams app ID from MS Graph"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity"
+    ],
+    "validDomains": [
+        "<<VIDEO-SITE-DOMAIN>>",
+        "*.youtube.com",
+        "*.sharepoint.com",
+        "*.sharepoint-df.com",
+        "*.login.microsoftonline.com",
+        "spoppe-a.akamaihd.net",
+        "spoprod-a.akamaihd.net",
+        "msft.spoppe.com"
+    ],
+    "webApplicationInfo": {
+      "id": "00000003-0000-0ff1-ce00-000000000000",
+      "resource": "https://<<YOUR-SPO-DOMAIN>>.sharepoint.com"
+    }
+}
