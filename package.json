@@ -18,7 +18,7 @@
     "dependencies": {
         "@azure/msal-node": "^1.5.0",
         "@microsoft/microsoft-graph-client": "^3.0.1",
-        "botbuilder": "~4.15.0",
+        "botbuilder": "~4.19.3",
         "dotenv": "^8.2.0",
         "isomorphic-fetch": "^3.0.0",
         "restify": "~8.6.0",
